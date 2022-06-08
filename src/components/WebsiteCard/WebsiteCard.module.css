@@ -1,0 +1,17 @@
+.webcardContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 10rem 0rem 10rem;
+    padding: 2rem;
+}
+
+.webcardTitle {
+    display: flex;
+    justify-content: center;
+    color: var(--orange);
+}
+
+.webcardImage {
+    display: block;
+    margin: 0rem auto;
+}

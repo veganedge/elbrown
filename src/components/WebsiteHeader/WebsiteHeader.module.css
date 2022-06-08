@@ -1,0 +1,37 @@
+.headerImageContainer {
+    display: flex;
+    margin: 0rem 1rem;
+}
+
+.headerImageSpan {
+    width: 20px;
+}
+
+.headerAnimatedImage {
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(0%);
+    animation-name: slideright;
+    animation-duration: 2s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideright {
+    100% {transform: translateX(+196%);}
+}
+
+.headerNavList {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerNavListItem {
+    font-size: 24px;
+    padding: 1rem;
+}   
+
+.headerNavListItem:hover {
+    color: var(--yellow)
+}
