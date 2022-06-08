@@ -1,0 +1,30 @@
+.connectFooterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid var(--yellow) 1px;
+    font-size: 1.25rem;
+    padding: .5rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.connectFooterIconsContainer {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.connectFooterIcons {
+    display:flex;
+    align-items: center;
+    margin: 0rem 1rem;
+    font-size: 1.65rem;
+}
+
+.connectFooterIcons:hover {
+    color: var(--yellow)
+}
+
+.connectFooterIconEmail {
+    font-size: 2rem;
+}

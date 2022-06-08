@@ -1,0 +1,41 @@
+.aboutAuthorContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 10rem;
+}
+
+.aboutAuthorBioContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.aboutAuthorBioName {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutAuthorContainer {
+        margin: 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutAuthorContainer {
+        flex-direction: column;
+        margin: 2rem 5rem;
+    }
+
+    .aboutAuthorBioContainer {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutAuthorContainer {
+        margin: 2rem 2rem;
+    }
+}
