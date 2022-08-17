@@ -1,22 +1,41 @@
+// React Router Imports
+import { NavLink } from "react-router-dom";
+// Style Imports
 import styles from "./WebsiteHeader.module.css";
 
+
 function WebsiteHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
+
+  let activeClassName = "activeLink";
+
   return (
     <header>
       <div className={styles.headerImageContainer}>
-        <img alt={logoAlt} src={logoSrc}></img>
+        {/* logo */}
+        <img alt={logoAlt} src={logoSrc} />
         <span className={styles.headerImageSpan}></span>
+        {/* birds animated image */}
         <img
           className={styles.headerAnimatedImage}
           alt={starlingAlt}
           src={starlingSrc}
-        ></img>
+        />
       </div>
+      
       <nav className={styles.headerNav}>
         <ul className={styles.headerNavList}>
-          <li className={styles.headerNavListItem}>About</li>
-          <li className={styles.headerNavListItem}>Books</li>
-          <li className={styles.headerNavListItem}>Contact</li>
+          <li className={styles.headerNavListItem}>
+            {/* need to get active link styled for users */}
+            <NavLink to="/elstarling/" className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>About</NavLink>
+          </li>
+          <li className={styles.headerNavListItem}>
+            <NavLink to="/elstarling/books">Books</NavLink>
+          </li>
+          <li className={styles.headerNavListItem}>
+            <NavLink to="">Contact</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

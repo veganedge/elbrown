@@ -1,0 +1,61 @@
+/* div wrapped around section */
+.content {
+    margin: 3rem 10rem;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* section title */
+.sectionContainer h1 {
+    color: var(--orange);
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* div wrapped around book */
+.bookContainer {
+    display: flex;
+}
+
+.queryingInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.queryingInfoContainer p {
+    text-align: left;
+}
+
+.bookTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.wipBorder {
+    border-top: solid var(--yellow) 1px;
+    padding-top: 48px;
+}
+
+.wipInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.wipInfoContainer p {
+    text-align: right;
+}

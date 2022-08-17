@@ -1,6 +1,9 @@
+// Style Imports
+import styles from "./ELStarlingAbout.module.css";
+// Component Imports
 import WebsiteHeader from "../../components/WebsiteHeader/WebsiteHeader";
 import ConnectFooter from "../../components/ConnectFooter/ConnectFooter";
-import styles from "./ELStarlingAbout.module.css";
+
 
 function ELStarlingAbout(props) {
   const authorBio = (
@@ -36,20 +39,24 @@ function ELStarlingAbout(props) {
         starlingAlt="starling animation"
         starlingSrc="https://via.placeholder.com/300x125/f7f7f2/B7AC44?text=starling image"
       />
+      
       <main className={styles.aboutAuthorContainer}>
         {/* Resize this for media queries */}
         <img
           alt="Author"
           src="https://via.placeholder.com/400x450/f7f7f2/000000?text=author photo"
-        ></img>
-        {/* Vertically align this div (aboutAuthorBioContainer) with img (CENTER IT) */}
+        />
         <div className={styles.aboutAuthorBioContainer}>
-          <h2 className={styles.aboutAuthorBioName}>E L Starling</h2>
+          <h2 className={styles.aboutAuthorBioName}>E L STARLING</h2>
           <div>{authorBio}</div>
         </div>
       </main>
-      {/* Pass this component the hrefs for the social icons - to make more reusable */}
-      <ConnectFooter />
+
+      <ConnectFooter
+        twitHref="https://twitter.com/E_l_Starling"
+        instaHref="https://www.instagram.com/e_l_starling/"
+        emailHref="mailto:emilylstarling@gmail.com"
+      />
     </>
   );
 }

@@ -1,15 +1,20 @@
+// Style Imports
 import styles from "./ConnectFooter.module.css";
+// Social Icons Imports
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-function ConnectFooter(props) {
+
+function ConnectFooter({ twitHref, instaHref, emailHref }) {
   return (
     <footer className={styles.connectFooterContainer}>
+
       <p>Connect:</p>
+
+      {/* social icons + links */}
       <div className={styles.connectFooterIconsContainer}>
-        {/* Need to figure out how to pass these hrefs from other component - to make this one reusable */}
         <a
-          href="https://www.instagram.com/e_l_starling/"
+          href={instaHref}
           target="_blank"
           rel="noreferrer"
           className={styles.connectFooterIcons}
@@ -17,7 +22,7 @@ function ConnectFooter(props) {
           <FaInstagram />
         </a>
         <a
-          href="https://twitter.com/E_l_Starling"
+          href={twitHref}
           target="_blank"
           rel="noreferrer"
           className={styles.connectFooterIcons}
@@ -25,7 +30,7 @@ function ConnectFooter(props) {
           <FaTwitter />
         </a>
         <a
-          href="mailto:emilylstarling@gmail.com"
+          href={emailHref}
           target="_blank"
           rel="noreferrer"
           className={`${styles.connectFooterIcons} ${styles.connectFooterIconEmail}`}
@@ -33,6 +38,7 @@ function ConnectFooter(props) {
           <MdOutlineEmail />
         </a>
       </div>
+
     </footer>
   );
 }

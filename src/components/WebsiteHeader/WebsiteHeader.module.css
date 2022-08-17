@@ -34,11 +34,15 @@
 }
 
 .headerNavListItem {
-    font-size: 1.25rem;
+    font-size: 1.50rem;
     font-weight: bold;
     padding: 0.5rem 1.5rem;
 }   
 
 .headerNavListItem:hover {
-    color: var(--yellow)
+    color: var(--yellow);
+}
+
+.activeLink {
+    color: var(--yellow);
 }

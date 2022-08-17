@@ -1,18 +1,19 @@
 .aboutAuthorContainer {
     display: flex;
     justify-content: space-between;
-    margin: 3rem 10rem;
+    margin: 3rem 10rem 4.5rem 10rem;
 }
 
 .aboutAuthorBioContainer {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    justify-content: center;
 }
 
 .aboutAuthorBioName {
-    text-decoration: underline;
     text-align: center;
+    color: var(--orange);
     margin-bottom: 1rem;
 }
 
