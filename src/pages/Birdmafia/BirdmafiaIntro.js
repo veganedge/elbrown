@@ -1,12 +1,12 @@
 // Style Imports
 import styles from "./BirdmafiaIntro.module.css";
 // Component Imports
-import WebsiteHeader from "../../components/WebsiteHeader/WebsiteHeader";
+import ELStarlingHeader from "../../components/ELStarlingHeader/ELStarlingHeader";
 
 function Birdmafia(props) {
   return (
     <>
-      <WebsiteHeader />
+      <ELStarlingHeader />
     </>
   );
 }

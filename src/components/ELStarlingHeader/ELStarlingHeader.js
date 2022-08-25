@@ -1,10 +1,10 @@
 // React Router Imports
 import { NavLink } from "react-router-dom";
 // Style Imports
-import styles from "./WebsiteHeader.module.css";
+import styles from "./ELStarlingHeader.module.css";
 
 
-function WebsiteHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
+function ELStarlingHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
 
   let activeClassName = "activeLink";
 
@@ -42,4 +42,4 @@ function WebsiteHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
   );
 }
 
-export default WebsiteHeader;
+export default ELStarlingHeader;

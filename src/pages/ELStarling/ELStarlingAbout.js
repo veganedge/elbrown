@@ -1,7 +1,7 @@
 // Style Imports
 import styles from "./ELStarlingAbout.module.css";
 // Component Imports
-import WebsiteHeader from "../../components/WebsiteHeader/WebsiteHeader";
+import ELStarlingHeader from "../../components/ELStarlingHeader/ELStarlingHeader";
 import ConnectFooter from "../../components/ConnectFooter/ConnectFooter";
 
 
@@ -27,7 +27,7 @@ function ELStarlingAbout(props) {
 
   return (
     <>
-      <WebsiteHeader
+      <ELStarlingHeader
         logoAlt="E L Starling logo"
         logoSrc="https://via.placeholder.com/500x125/f7f7f2/000000?text=signature logo"
         starlingAlt="starling animation"

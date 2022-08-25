@@ -1,12 +1,12 @@
 // Style Imports
 import styles from "./ELBPapercuttingIntro.module.css";
 // Component Imports
-import WebsiteHeader from "../../components/WebsiteHeader/WebsiteHeader";
+import ELStarlingHeader from "../../components/ELStarlingHeader/ELStarlingHeader";
 
 function ELBPapercuttingIntro(props) {
   return (
     <>
-      <WebsiteHeader />
+      <ELStarlingHeader />
     </>
   );
 }
