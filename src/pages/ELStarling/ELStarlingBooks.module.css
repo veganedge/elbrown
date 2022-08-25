@@ -1,6 +1,6 @@
 /* div wrapped around section */
 .content {
-    margin: 3rem 10rem;
+    margin: 3rem 20rem;
 }
 
 .sectionContainer {
@@ -24,6 +24,7 @@ p {
 /* div wrapped around book */
 .bookContainer {
     display: flex;
+    align-items: center;
 }
 
 .queryingInfoContainer {

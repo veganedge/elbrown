@@ -28,13 +28,13 @@ function WebsiteHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
             {/* need to get active link styled for users */}
             <NavLink to="/elstarling/" className={({ isActive }) =>
               isActive ? activeClassName : undefined
-            }>About</NavLink>
+            }>ABOUT</NavLink>
           </li>
           <li className={styles.headerNavListItem}>
-            <NavLink to="/elstarling/books">Books</NavLink>
+            <NavLink to="/elstarling/books">BOOKS</NavLink>
           </li>
           <li className={styles.headerNavListItem}>
-            <NavLink to="">Contact</NavLink>
+            <NavLink to="">CONTACT</NavLink>
           </li>
         </ul>
       </nav>

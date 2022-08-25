@@ -22,7 +22,7 @@
 }
 
 .connectFooterIcons:hover {
-    color: var(--yellow)
+    color: var(--yellow);
 }
 
 .connectFooterIconEmail {

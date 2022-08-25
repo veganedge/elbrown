@@ -6,9 +6,9 @@ import ConnectFooter from "../../components/ConnectFooter/ConnectFooter";
 
 const ELStarlingBooks = (props) => {
 
-  const queryingTitle = "ROADSIDE DAISIES";
+  const queryingTitle = "Roadside Daisies";
 
-  const wipTitle = "BOUNDLESS";
+  const wipTitle = "Boundless";
 
   const sectionInfoPlaceholder = (
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -24,13 +24,7 @@ const ELStarlingBooks = (props) => {
     nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Magna fermentum
     iaculis eu non. Tristique magna sit amet purus gravida quis blandit turpis
     cursus. Vitae sapien pellentesque habitant morbi tristique senectus et.
-    Amet nisl purus in mollis nunc sed. Commodo elit at imperdiet dui accumsan
-    sit amet nulla. Cursus vitae congue mauris rhoncus. Sit amet volutpat
-    consequat mauris nunc congue. Urna nunc id cursus metus. Eget mi proin sed
-    libero enim sed faucibus. Id ornare arcu odio ut sem. Vel elit scelerisque
-    mauris pellentesque pulvinar pellentesque habitant morbi tristique. Magna
-    sit amet purus gravida quis blandit turpis cursus. At lectus urna duis
-    convallis convallis.</p>
+    Amet nisl purus in mollis nunc sed.</p>
   )  ;
     
   return (
@@ -49,7 +43,7 @@ const ELStarlingBooks = (props) => {
           <div className={styles.bookContainer}>
             <img
               alt="Querying Inspiration"
-              src="https://via.placeholder.com/400x450/f7f7f2/000000?text=inspiration photo"
+              src="https://via.placeholder.com/350x350/f7f7f2/000000?text=inspiration photo"
             />
             <div className={styles.queryingInfoContainer}>
               <h2 className={styles.bookTitle}>{queryingTitle}</h2>
@@ -67,7 +61,7 @@ const ELStarlingBooks = (props) => {
             <div>
               <img
                 alt="WIP Inspiration"
-                src="https://via.placeholder.com/400x450/f7f7f2/000000?text=inspiration photo"
+                src="https://via.placeholder.com/350x350/f7f7f2/000000?text=inspiration photo"
               />
             </div>
           </div>

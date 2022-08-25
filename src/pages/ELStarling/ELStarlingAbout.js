@@ -21,13 +21,7 @@ function ELStarlingAbout(props) {
       nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Magna fermentum
       iaculis eu non. Tristique magna sit amet purus gravida quis blandit turpis
       cursus. Vitae sapien pellentesque habitant morbi tristique senectus et.
-      Amet nisl purus in mollis nunc sed. Commodo elit at imperdiet dui accumsan
-      sit amet nulla. Cursus vitae congue mauris rhoncus. Sit amet volutpat
-      consequat mauris nunc congue. Urna nunc id cursus metus. Eget mi proin sed
-      libero enim sed faucibus. Id ornare arcu odio ut sem. Vel elit scelerisque
-      mauris pellentesque pulvinar pellentesque habitant morbi tristique. Magna
-      sit amet purus gravida quis blandit turpis cursus. At lectus urna duis
-      convallis convallis.
+      Amet nisl purus in mollis nunc sed. 
     </p>
   );
 
@@ -40,17 +34,21 @@ function ELStarlingAbout(props) {
         starlingSrc="https://via.placeholder.com/300x125/f7f7f2/B7AC44?text=starling image"
       />
       
-      <main className={styles.aboutAuthorContainer}>
-        {/* Resize this for media queries */}
-        <img
-          alt="Author"
-          src="https://via.placeholder.com/400x450/f7f7f2/000000?text=author photo"
-        />
-        <div className={styles.aboutAuthorBioContainer}>
-          <h2 className={styles.aboutAuthorBioName}>E L STARLING</h2>
-          <div>{authorBio}</div>
+      <div className={styles.content}>
+        <div className={styles.sectionContainer}>
+          {/* Resize this for media queries */}
+          <h1 className={styles.aboutAuthorBioName}>E L STARLING</h1>
+          <div className={styles.aboutAuthorContainer}>
+            <img
+              alt="Author"
+              src="https://via.placeholder.com/350x350/f7f7f2/000000?text=author photo"
+            />
+            <div className={styles.aboutAuthorBioContainer}>
+              <div>{authorBio}</div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
 
       <ConnectFooter
         twitHref="https://twitter.com/E_l_Starling"
