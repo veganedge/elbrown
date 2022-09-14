@@ -3,11 +3,7 @@ import { NavLink } from "react-router-dom";
 // Style Imports
 import styles from "./ELStarlingHeader.module.css";
 
-
 function ELStarlingHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
-
-  let activeClassName = "activeLink";
-
   return (
     <header>
       <div className={styles.headerImageContainer}>
@@ -21,20 +17,45 @@ function ELStarlingHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
           src={starlingSrc}
         />
       </div>
-      
+
       <nav className={styles.headerNav}>
         <ul className={styles.headerNavList}>
           <li className={styles.headerNavListItem}>
             {/* need to get active link styled for users */}
-            <NavLink to="/elstarling/" className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }>ABOUT</NavLink>
+            <NavLink
+              to="/elstarling/"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "#B7AC44" : "",
+                };
+              }}
+            >
+              ABOUT
+            </NavLink>
           </li>
           <li className={styles.headerNavListItem}>
-            <NavLink to="/elstarling/books">BOOKS</NavLink>
+            <NavLink
+              to="/elstarling/books"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "#B7AC44" : "",
+                };
+              }}
+            >
+              BOOKS
+            </NavLink>
           </li>
           <li className={styles.headerNavListItem}>
-            <NavLink to="">CONTACT</NavLink>
+            <NavLink
+              to=""
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "#B7AC44" : "",
+                };
+              }}
+            >
+              CONTACT
+            </NavLink>
           </li>
         </ul>
       </nav>
