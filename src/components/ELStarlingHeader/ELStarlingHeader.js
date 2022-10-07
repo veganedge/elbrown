@@ -47,7 +47,7 @@ function ELStarlingHeader({ logoAlt, logoSrc, starlingAlt, starlingSrc }) {
           </li>
           <li className={styles.headerNavListItem}>
             <NavLink
-              to=""
+              to="/elstarling/contact"
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#B7AC44" : "",
